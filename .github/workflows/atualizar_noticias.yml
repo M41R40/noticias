@@ -25,10 +25,8 @@ jobs:
       - name: Executar o Robô
         run: python robo.py
 
-      - name: Salvar e Commitar as Novas Notícias no Repositório
-        run: |
-          git config --global user.name "Robô de Notícias"
-          git config --global user.email "robo@actions.github.com"
-          git add --force historico_noticias.json
-          git commit -m "Atualização automática de notícias via GitHub Actions [skip ci]" || exit 0
-          git push
+      - name: Salvar Histórico como Artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: historico-noticias
+          path: historico_noticias.json
