@@ -1,0 +1,7 @@
+("golpe do pix" OR "fraude pix" OR "roubo pix" OR "sequestro relâmpago" OR "pix fraudulento") (banco OR fintech OR nubank OR itaú OR bradesco OR santander)
+("Lula" OR "Luiz Inácio Lula da Silva") AND ("Flávio Bolsonaro" OR "Flávio") ("eleições 2026" OR "segundo turno" OR "pesquisa" OR "pesquisas" OR "debate" OR "redes sociais" OR "campanha")
+("segurança da informação" OR "vazamento de dados" OR "exposição de dados" OR "roubo de dados") AND (banco OR pix OR "instituição financeira")
+(site:tse.jus.br OR site:stf.jus.br OR site:agenciabrasil.ebc.com.br) ("desinformação" OR "fake news" OR "liberação de canais" OR "derrubada de canal" OR "redes sociais") ("2026" OR "eleições")
+(banco OR bancos OR "setor financeiro" OR fintech) (vazamento OR ataque OR malware OR fraude OR golpe OR phishing OR ransomware OR "segurança cibernética") -"MASTER"
+filetype:pdf ("eleições 2026" OR "pesquisa eleitoral") ("Lula" OR "Flávio Bolsonaro") ("TSE" OR "STF" OR "escala 6x1")
+site:agenciabrasil.ebc.com.br ("eleições 2026" OR "segundo turno" OR "pesquisas eleitorais" OR "debates presidenciais") ("Lula" OR "Flávio Bolsonaro" OR "TSE" OR "STF" OR "escala 6x1" OR "Banco Master")
