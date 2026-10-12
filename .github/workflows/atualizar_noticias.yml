@@ -1,8 +1,10 @@
+name: Robô Diário de Notícias
+
 on:
   schedule:
-    # Roda às 19:00 UTC (que equivale a 16:00 no horário de Brasília)
-    - cron: '0 19 * * *'
-  workflow_dispatch: # Permite rodar manualmente pelo site do GitHub quando você quiser
+    # Roda todo dia às 08:00 UTC (ajuste se necessário)
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Permite rodar manualmente pelo site do GitHub quando quiser
 
 jobs:
   run-robot:
@@ -19,7 +21,7 @@ jobs:
       - name: Instalar Dependências
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser
+          pip install -r requirements.txt
 
       - name: Executar o Robô
         run: python robo.py
