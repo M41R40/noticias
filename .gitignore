@@ -1,0 +1,10 @@
+# Ambiente Virtual Python
+myenv/
+venv/
+env/
+.env/
+
+# Restante das regras...
+historico_noticias.json
+__pycache__/
+.vscode/
