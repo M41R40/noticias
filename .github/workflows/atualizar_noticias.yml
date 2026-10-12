@@ -1,9 +1,7 @@
-name: Robô Diário de Notícias
-
 on:
   schedule:
-    # Roda todo dia às 08:00 UTC (horário ajustável)
-    - cron: '0 8 * * *'
+    # Roda às 19:00 UTC (que equivale a 16:00 no horário de Brasília)
+    - cron: '0 19 * * *'
   workflow_dispatch: # Permite rodar manualmente pelo site do GitHub quando você quiser
 
 jobs:
